@@ -1,0 +1,123 @@
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+/* utility class */
+.container{
+    max-width:1200px;
+    width:90%;
+    margin:auto;
+}
+     /* navbar */
+
+.navbar input[type="checkbox"],
+.navbar .humburgerlines{
+    display: none;
+}
+.navbar{
+    
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 5px 10px 0px #aaa;
+    background-color: #fff;
+    color:black;
+    opacity: 0.85;
+    z-index:10px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px ;
+}
+.menu-items{
+    order: 2;
+    display: flex;
+    font-size:1.5em ;
+    
+}
+.menu-items li{
+    margin-left: 1.5em;
+    list-style: none;
+    
+}
+.menu-items li a{
+    color: black;
+    text-decoration: none;
+}
+.logo{
+    order: 1;
+}
+.font-case{
+    background: url(./Images/front\ picture.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.font-container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.66em;
+    height: 100%;
+}
+.font-container h1{
+    color:black;
+    font-size: 3em;
+}
+.font-container p{
+    color:white;
+    font-size: 1.8em;
+}
+.btn{
+    background-color: orange;
+    text-decoration: none;
+    font-size: 1.6em;
+    color: white;
+    padding: 0.2em 0.5em;
+    border-radius:10%;
+}
+#about{
+    background-color: #f8f8f9;
+    padding: 50px 0;
+}
+.about-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-content h1{
+    font-size: 3.2rem;
+}
+.about-content p{
+    font-size: 1.6rem;
+    color: #666;
+}
+.small{
+    font-size: 1.6rem;
+    color:#555;
+}
+.about-img{
+    flex: 1 1 400px;
+padding:30px;
+}
+.about-text{
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+}
+.about-img img{
+    height:300px;
+    display:block;
+    max-width: 100%;
+    margin: auto;
+    object-position: center;
+    object-fit: cover;
+}
